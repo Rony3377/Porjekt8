@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobil.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    /******header box1******/
+    .box1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 20px;
+      background-color: rgb(33, 224, 33);
+      height: 50px;
+    }
+    /******header box1 h2 li******/
+    
+    .h2 {
+      font-size: 15px;
+      background-color:  rgb(33, 224, 33);
+    }
+    .pink-box{
+      width: 250px;
+      height: 250px;
+    }
+    
+    /******footer******/
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border: chartreuse solid 1px;
+      background-color:  rgb(33, 224, 33);
+      height: 50px;
+    }
+
+    .box-grosse {
+height: 150px;
+    }
+  </style>
+  <body>
+    <header>
+         <!-- header beginn -->
+          <!-- header box1  -->
+      <div class="box1">
+        
+          <!-- header box1 h1 navbar-->
+        <div class="h1">
+          <nav class="navbar navbar-expand-sm bg-grun navbar-dark">
+            
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="bi bi-balloon-fill"></i>
+              </a>
+            </div>
+            <!-- header box1 h2 nav beginn -->
+          </nav>
+        </div>
+        <!-- header box1 h2 navbar -->
+        <div class="h2">
+          <!-- A grey horizontal navbar that becomes vertical on small screens -->
+          <nav class="navbar navbar-expand-sm bg-grun">
+            <div class="container-fluid">
+              <!-- Links -->
+               <!-- header box1 h2 navbar ul beginn -->
+              <ul class="navbar-nav">
+                <!-- header box1 h2 navbar li  -->
+                <!-- header box1 h2 navbar li starseite -->
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">starseite</a>
+                </li>
+                <!-- header box1 h2 navbar li überuns -->
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">über uns</a>
+                </li>
+                <!-- header box1 h2 navbar li skil -->
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#">skil</a>
+                </li>
+                <!-- header box1 h2 navbar li kontakt -->
+                <li class="nav-item nav-blak">
+                  <a class="nav-link text-black" href="#">kontakt</a>
+                </li>
+                <!-- header box1 navbar ui ende -->
+              </ul>
+            </div>
+            <!-- header box1 nav ende -->
+          </nav>
+        </div>
+      </div>
+       <!-- header ende -->
+    </header>
+    <!---Sidebar Button-->
+    <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      
+      
+        <!-- The sidebar -->
+       <div class="row">
+        
+        <!-- The sidebar col-2 -->
+        <div class="col-2">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <!--colapse inhalt-->
+                  <div
+                class="d-flex flex-column vh-100 flex-shrink-0 p-4 text-white bg-dark"
+                style="width: 175px;">
+                   <!-- The sidebar col-2 input suchfelder -->
+                  <div class="such-box d-flex">
+                    <!--Icon-->
+                    <i class="bi bi-search m-2"></i>
+                    <!--Suchfeld-->
+                      <input type="suchfelder" class="form-control" id="suchfelder" placeholder="suchfelder" name="suchfelder">
+                  </div>
+                   <!-- The sidebar col-2 messege -->
+                   <div class="such-box d-flex">
+                    <a class="#messege text-white mt-5">
+                    <!--Icon-->
+                    <i class="bi bi-envelope color-white"></i>
+                     <p >Messege</p> 
+                    </a>
+                  </div>
+                <!-- The sidebar col-2 einstellung -->
+                <a class="#einstellung text-white mt-5 m-2">
+                  <i class="bi bi-gear m-2"></i>
+                  Einstellung
+                </a>
+                <!-- The sidebar col-2 ausloggen -->
+                <a class="#ausloggen text-white mt-5 m-2">
+                  <i class="bi bi-box-arrow-right m-2"></i>
+                  Ausloggen
+                </a>
+              </div>
+                </div>
+              </div>
+        
+         </div>
+        
+               <!-- The  col-10 -->
+               <div class="col-10">
+               <!-- The main beginn-->
+      <main>
+               <!-- Control the column width, and how they should appear on different devices -->
+               <div class="row">
+                <div class="col bg-warning">
+                 <div class="d-flex justify-content-center">
+                  <h1>title</h1>
+              </div>
+                <div class="d-flex justify-content-flexstart">
+                  <h4>click->aufmachen und schliessen</h4>
+               </div>
+              </div>
+             </div>
+              <!-- The  col-10  row-->
+              <div class="row">
+              <div
+               class="col p-5 bg-primary text-white"
+               >
+             
+               
+             <div class="button-box d-flex justify-content-between">
+              <!--Button 1-->
+              <button data-bs-toggle="collapse" data-bs-target="#demo">
+                Collapsible1
+              </button>
+              <!--Button 2-->
+              <button data-bs-toggle="collapse" data-bs-target="#demo2">
+                Collapsible
+              </button>
+              <!--Button 3-->
+              <button data-bs-toggle="collapse" data-bs-target="#demo3">
+                Collapsible
+              </button>
+            </div>
+            <!--zweite div fur text-->
+             <div class="row">
+              <div class="col">
+            <!--Lorem von Button 1-->
+             <div id="demo" class="collapse">
+               Lorem ipsum dolor text....
+              </div>
+              </div>
+             <div class="col">
+             <!--Lorem von Button 2-->
+             <div id="demo2" class="collapse">
+               Lorem ipsum dolor text....
+              </div>
+              </div>
+              <div class="col">
+              <!--Lorem von Button 3-->
+               <div id="demo3" class="collapse">
+                Lorem ipsum dolor text.... 
+               </div>
+              </div>
+              
+             </div>
+            </div>
+            
+              <!-- The  col-10  row accordion beginn-->
+              <div class="col p-3 bg-primary text-white">
+               <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                   </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                    >
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong>
+                      It is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The  col-10  row accordion ende-->
+
+          <div class="row gap-3 mt-3 mb-3">
+            <div class="col bg-danger pink-box box-grosse">
+                <div class="mein-card d-flex align-items-center justify-content-center flex-column">
+                  <!--Icon-->
+                    <i class="bi bi-star"></i>
+                    <!--Text-->
+                    <p>Icon name</p>
+                </div>
+           
+            </div>
+            <div class="col bg-danger pink-box box-grosse">
+                <div class="mein-card d-flex align-items-center justify-content-center flex-column">
+               <!--Icon-->
+               <i class="bi bi-star"></i>
+               <!--Text-->
+               <p>Icon name</p>
+           </div>
+            </div>
+            <div class="col bg-danger">3</div>
+            <div class="col bg-danger">4</div>
+            <div class="col bg-danger">5</div>
+          </div>
+          <div class="row">
+          <div class="row gap-3 mt-3 mb-3">
+              <div class="col bg-danger pink-box box-grosse">
+                  <div class="mein-card d-flex align-items-center justify-content-center flex-column">
+                    <!--Icon-->
+                      <i class="bi bi-star"></i>
+                      <!--Text-->
+                      <p>Icon name</p>
+                  </div>
+         
+              </div>
+            <div class="col bg-danger">
+              
+            </div>
+            <div class="col bg-danger">3</div>
+            <div class="col bg-danger">4</div>
+            <div class="col bg-danger">5</div>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    </main>
+      </div>
+    </div>
+    <footer>
+       <!-- The footer beginn-->
+        
+
+            <i class="bi bi-camera"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            
+        </div>
+        <!-- The footer ende-->
+    </footer>
+  </body>
+</html>
